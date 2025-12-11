@@ -35,7 +35,7 @@ def fixpoints(n) :
 
         a = seq.index(fs) # index of first element of cycle
 
-        cyc = set(seq[a:]) # clip segment, it's a cycle
+        cyc = sorted(seq[a:]) # clip segment, it's a cycle
         rep = min(cyc) # representative element
         elems = set(seq) # elements in it's "class"
         assert len(elems) == len(seq)
