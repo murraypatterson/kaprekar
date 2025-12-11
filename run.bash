@@ -1,7 +1,7 @@
 #!/bin/bash
 
 csv() {
-    column -t -s, -n "$@" | less -F -S -X -K
+    column -t -s, "$@" | less -F -S -X -K
 }
 
 generate() {
